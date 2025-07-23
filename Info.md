@@ -49,3 +49,28 @@ lxd                 8088                8065                2                   
 <img width="791" height="873" alt="image" src="https://github.com/user-attachments/assets/b27bc7ef-e5fc-463d-86d1-5b35df9ef67e" />
 
 
+### Persistent volume
+
+ - docker volume ls
+ <img width="396" height="60" alt="image" src="https://github.com/user-attachments/assets/1b526d24-c79b-4ec3-a3b9-d11ff49a9b5f" />
+
+ labeled volume
+ - docker run -d --name db1 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8
+ <img width="892" height="313" alt="image" src="https://github.com/user-attachments/assets/a139e57d-23de-4a30-b94c-ed7972b9c8e7" />
+
+<img width="1203" height="497" alt="image" src="https://github.com/user-attachments/assets/551dbf9e-9f08-48c4-8b19-6841188d9bee" />
+
+#second exercise we delete the database then also the data persist
+<img width="1663" height="655" alt="image" src="https://github.com/user-attachments/assets/14f37ed7-bc2a-4399-b08c-a4f0c9b16d6c" />
+
+- stop and remove container
+ <img width="567" height="157" alt="image" src="https://github.com/user-attachments/assets/e1285024-3ef2-4fdf-ba4b-311e9243c024" />
+
+ - add the pesisten path to new DB:
+
+   <img width="908" height="536" alt="image" src="https://github.com/user-attachments/assets/e8380bdb-1e59-45f7-87ff-1c91772f7911" />
+
+- mapping to new db with persistent data:
+<img width="586" height="76" alt="image" src="https://github.com/user-attachments/assets/05909f21-7240-4567-9c59-94d7b1dd78e7" />
+
+
